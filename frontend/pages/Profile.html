@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Profile Page</title>
+        <link href="../styles/Profile.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/images.png" alt="" />
+                    <h2 class="snapchat">SnapCart</h2>
+                </div>
+
+                <ul class="navitems">
+                    <a href="Home.html"> <li class="home">Home</li></a>
+                    <li class="about">About Us</li>
+                    <li class="contact">Contact</li>
+                    <a href="Cart.html"> <li class="mycart">My Cart</li> </a>
+                    <a class="mypro" href="Profile.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-person-circle"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path
+                                fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                            />
+                        </svg>
+                        <h4>My Profile</h4>
+                    </a>
+                    <a href="Login.html"><li class="logout">Logout</li></a>
+                </ul>
+            </div>
+            <div class="body">
+                <div class="left">
+                    <div class="left1">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-house-door"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M8.354 1.146a.5.5 0 0 0-.708 0l-6 6A.5.5 0 0 0 1.5 7.5v7a.5.5 0 0 0 .5.5h4.5a.5.5 0 0 0 .5-.5v-4h2v4a.5.5 0 0 0 .5.5H14a.5.5 0 0 0 .5-.5v-7a.5.5 0 0 0-.146-.354L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM2.5 14V7.707l5.5-5.5 5.5 5.5V14H10v-4a.5.5 0 0 0-.5-.5h-3a.5.5 0 0 0-.5.5v4z"
+                            />
+                        </svg>
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="20"
+                            height="20"
+                            fill="currentColor"
+                            class="bi bi-caret-right"
+                            viewBox="0 0 16 16"
+                        >
+                            <path
+                                d="M6 12.796V3.204L11.481 8zm.659.753 5.48-4.796a1 1 0 0 0 0-1.506L6.66 2.451C6.011 1.885 5 2.345 5 3.204v9.592a1 1 0 0 0 1.659.753"
+                            />
+                        </svg>
+                        <h4>My profile</h4>
+                    </div>
+                    <div class="left2">
+                        <h2>My profile</h2>
+
+                        <h3>Basic</h3>
+                        <div class="name">
+                            <h4>Name:</h4>
+                            <input class="ip" type="text" name="" id="name" value="XYZ" disabled />
+                        </div>
+
+                        <div class="email">
+                            <h4>Email:</h4>
+                            <input
+                                class="ip"
+                                type="text"
+                                name=""
+                                id="email"
+                                value="xyz@gmail.com"
+                                disabled
+                            />
+                        </div>
+
+                        <div class="address">
+                            <h4>Phone no:</h4>
+                            <input class="ip" type="text" value="9876522347" disabled />
+                        </div>
+                    </div>
+                    <div class="left3">
+                        <button class="btn" id="updatebutton">Update</button>
+                    </div>
+                </div>
+                <div class="right">
+                    <div class="top"><img src="../assets/avatar.png" alt="" /></div>
+                    <div class="bottom">
+                        <div class="pwd">
+                            <h3>Change Password</h3>
+                            <div class="pwdd">
+                                <div class="cur">
+                                    <h4>Current Password</h4>
+                                    <input type="password" name="" id="currentpass" />
+                                </div>
+                                <div class="new">
+                                    <h4>New Password</h4>
+                                    <input type="password" name="" id="newpass" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="ph">
+                            <h4>Address:</h4>
+                            <input class="ip" type="text" value="Ernakulam" disabled />
+                        </div>
+                    </div>
+                    <button class="btn" id="savebutton">Save</button>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2024 SnapCart. All rights reserved.</p>
+                <div class="social-media-icons"></div>
+            </div>
+        </div>
+    </body>
+</html>

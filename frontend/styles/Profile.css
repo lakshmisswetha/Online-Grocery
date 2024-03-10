@@ -1,0 +1,243 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+}
+a:visited {
+    color: inherit;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 3px 100px;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width: 70px;
+    height: 70px;
+}
+.prof {
+    width: 10px;
+    height: 10px;
+}
+.snapchat {
+    margin-left: 7px;
+    color: #186c92;
+}
+.navitems {
+    display: flex;
+    color: #06334f;
+    font-weight: bolder;
+    align-items: center;
+}
+.logout {
+    margin-left: 50px;
+}
+ul {
+    list-style-type: none;
+}
+li {
+    margin-right: 30px;
+    cursor: pointer;
+    font-size: large;
+}
+li:hover,
+.mypro:hover {
+    color: red;
+}
+.mypro {
+    display: flex;
+    align-items: center;
+}
+.mypro h4 {
+    margin-left: 10px;
+}
+.body {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    /* background-color: white; */
+    padding: 35px 250px;
+    /* background: linear-gradient(to right bottom, #b8e5f7, #fba8a0, #06334f 80%); */
+    background: url(../assets/two.jpeg);
+    background-size: auto;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    background-color: #06334f;
+    color: white;
+    padding: 10px 100px;
+}
+.left {
+    /* box-shadow: 0 0 10px white; */
+
+    border-radius: 30px 0 0 30px;
+    text-align: left;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    background: linear-gradient(to right bottom, #add8e6, #06334f 98%);
+    padding: 20px 40px;
+    position: relative;
+}
+.left3 {
+    text-align: center;
+    margin-left: 300px;
+    gap: 10px;
+}
+.left1 {
+    display: flex;
+    align-items: center;
+}
+.left1 h4 {
+    margin-left: 8px;
+}
+.ip {
+    width: 300px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    box-shadow: 0 0 7px white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    background-color: #add8e6;
+    font-size: medium;
+}
+.right {
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(to left bottom, #b8e5f7, #06334f 98%);
+    border-radius: 0 30px 30px 0;
+    display: flex;
+    flex-direction: column;
+    padding: 30px 50px;
+    position: relative;
+    /* box-shadow: 10px 0px 0 white; */
+}
+.top {
+    display: flex;
+    height: 30%;
+    justify-content: center;
+}
+.top img {
+    width: 160px;
+    height: 160px;
+}
+.bottom {
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.left1 {
+    display: flex;
+    z-index: 1;
+}
+
+.left2 h2 {
+    margin-bottom: 20px;
+}
+.pwd,
+.email,
+.name,
+.address {
+    margin-top: 30px;
+}
+.email h4,
+.name h4,
+.address h4 {
+    margin-bottom: 10px;
+}
+.email input,
+.name input,
+.address input,
+.ip input {
+    height: 30px;
+    box-shadow: 0 0 7px white;
+    border-radius: 5px;
+    outline: none;
+    background-color: #add8e6;
+    font-size: medium;
+}
+.pwd input {
+    box-shadow: 0 0 7px white;
+    border: 0;
+    outline: 0;
+    width: 170px;
+    border-radius: 5px;
+    margin-bottom: 30px;
+    background-color: #add8e6;
+    padding: 5px;
+    font-size: medium;
+}
+.cur,
+.new {
+    margin-top: 20px;
+}
+.new {
+    margin-left: 10px;
+}
+.cur input,
+.new input {
+    height: 30px;
+    margin-top: 10px;
+}
+
+.pwdd {
+    display: flex;
+}
+
+.ph h4 {
+    margin-bottom: 10px;
+}
+.ph input {
+    height: 30px;
+    width: 350px;
+}
+.btn {
+    color: black;
+    height: 30px;
+    width: 70px;
+
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: medium;
+}
+
+#updatebutton {
+    position: absolute;
+    right: 10px;
+    bottom: 8px;
+    background-color: #b9f7d8;
+}
+
+#savebutton {
+    position: absolute;
+    left: 10px;
+    bottom: 8px;
+    background-color: #fba8a0;
+}
+.btn:hover {
+    box-shadow: 0 0 15px white;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="Stylesheet" href="../styles/Cart.css" />
+        <title>Document</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="navbar">
+                <div class="logo">
+                    <img src="../assets/images.png" alt="" />
+                    <h2 class="snapchat">SnapCart</h2>
+                </div>
+
+                <ul class="navitems">
+                    <a href="Home.html"> <li class="home">Home</li></a>
+                    <li class="about">About Us</li>
+                    <li class="contact">Contact</li>
+                    <li class="mycart">My Cart</li>
+                    <a class="mypro" href="Profile.html">
+                        <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="25"
+                            height="25"
+                            fill="currentColor"
+                            class="bi bi-person-circle"
+                            viewBox="0 0 16 16"
+                        >
+                            <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                            <path
+                                fill-rule="evenodd"
+                                d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                            />
+                        </svg>
+                        <h4>My Profile</h4>
+                    </a>
+                    <a href="Login.html"><li class="logout">Logout</li></a>
+                </ul>
+            </div>
+            <div class="bod"></div>
+            <div class="body">
+                <h1>My Cart</h1>
+                <div class="small-container cart-page">
+                    <table class="cart"></table>
+                    <div class="item-total">
+                        <div class="one">Order Summary</div>
+                        <div class="two">
+                            <div class="total">Total :</div>
+                            <div class="price">
+                                <input type="text" value="0" class="set" />
+                            </div>
+                        </div>
+                        <div class="three">
+                            <a href="../pages/Transaction.html">
+                                <button id="pay">Proceed to pay</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer">
+                <p>&copy; 2024 SnapCart. All rights reserved.</p>
+            </div>
+        </div>
+
+        <script src="../js/Cart.js"></script>
+    </body>
+</html>

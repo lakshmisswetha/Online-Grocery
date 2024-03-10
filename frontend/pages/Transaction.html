@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Secure Payment</title>
+        <link rel="stylesheet" href="../styles/Transaction.css" />
+    </head>
+    <body>
+        <div class="navbar">
+            <div class="logo">
+                <img src="../assets/images.png" alt="" />
+                <h2 class="snapchat">SnapCart</h2>
+            </div>
+
+            <ul class="navitems">
+                <a href="Home.html"> <li class="home">Home</li></a>
+                <li class="about">About Us</li>
+                <li class="contact">Contact</li>
+                <a href="Cart.html"> <li class="mycart">My Cart</li> </a>
+                <a class="mypro" href="Profile.html">
+                    <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="25"
+                        height="25"
+                        fill="currentColor"
+                        class="bi bi-person-circle"
+                        viewBox="0 0 16 16"
+                    >
+                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0" />
+                        <path
+                            fill-rule="evenodd"
+                            d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"
+                        />
+                    </svg>
+                    <h4>My Profile</h4>
+                </a>
+                <a href="Login.html"><li class="logout">Logout</li></a>
+            </ul>
+        </div>
+
+        <div class="payment-container">
+            <main>
+                <section class="payment-details">
+                    <h1>Payment Details</h1>
+                    <form>
+                        <div class="field-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" placeholder="yourname@example.com" />
+                        </div>
+
+                        <div class="payment-methods">
+                            <span>Payment Method:</span>
+                            <div class="methods">
+                                <div class="pm">
+                                    <input
+                                        type="radio"
+                                        id="upi"
+                                        name="payment-method"
+                                        value="UPI"
+                                    />
+                                    <label for="upi">UPI</label>
+                                </div>
+                                <div class="pm">
+                                    <input
+                                        checked="true"
+                                        type="radio"
+                                        id="credit-card"
+                                        name="payment-method"
+                                        value="Credit Card"
+                                    />
+                                    <label for="credit-card"> Credit Card</label>
+                                </div>
+                                <div class="pm">
+                                    <input
+                                        type="radio"
+                                        id="debit-card"
+                                        name="payment-method"
+                                        value="Debit Card"
+                                    />
+                                    <label for="debit-card">Debit Card</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="credit-card">
+                            <div class="field-group">
+                                <label for="card-number">Card Number</label>
+                                <input
+                                    type="text"
+                                    id="card-number"
+                                    placeholder="•••• •••• •••• ••••"
+                                />
+                            </div>
+                            <div class="field-group">
+                                <label for="expiry-date">Expiry Date</label>
+                                <input type="month" id="expiry-date" min="2024-01" max="2050-12" />
+                            </div>
+                            <div class="field-group">
+                                <label for="cvv">CVV</label>
+                                <input type="text" id="cvv" placeholder="•••" />
+                            </div>
+                        </div>
+
+                        <div class="field-group-discount-group">
+                            <label for="discount-code">Discount Code</label>
+                            <div class="apply-code">
+                                <input type="text" id="discount-code" placeholder="Enter code" />
+                                <div class="apply">APPLY</div>
+                            </div>
+                        </div>
+                        <div class="upi">
+                            <div class="field-group">
+                                <label for="upi-app">UPI App</label>
+                                <select id="upi-app">
+                                    <option value="amazon-pay">Amazon Pay</option>
+                                    <option value="paytm">Paytm</option>
+                                    <option value="phonepe">PhonePe</option>
+                                    <option value="google-pay">Google Pay</option>
+                                </select>
+                            </div>
+
+                            <div class="field-group">
+                                <label for="upi-id">UPI ID</label>
+                                <input type="text" id="upi-id" placeholder="yourid@upi" />
+                            </div>
+                        </div>
+                        <!-- upi -->
+                        <button type="submit">Confirm Payment</button>
+                    </form>
+                </section>
+                <aside class="order-summary">
+                    <h3>Order Summary</h3>
+                    <!-- <div class="order-item">
+                        <img src="vendakka.jpg" width="130" height="100" alt="Item Description" />
+                        <div class="item-description">
+                            <div>Description</div>
+                            <div>Qty.1</div>
+                        </div>
+                        <div class="item-price">₹10.00</div>
+                    </div>
+                    <div class="order-item">
+                        <img src="cauli.jpg" width="130" height="100" alt="Item Description" />
+                        <div class="item-description">
+                            <div>Description</div>
+                            <div>Qty.1</div>
+                        </div>
+                        <div class="item-price">₹15.00</div>
+                    </div> -->
+                    <hr />
+                    <div class="price-details">
+                        <p>Subtotal: <span id="tot"></span></p>
+                        <p>Discount: <span id="dis"></span></p>
+                        <p>Shipping: <span id="shipping">$1.2</span></p>
+                        <p>Duties and Taxes: <span id="tax">$0.9</span></p>
+                        <hr />
+                        <p class="total">TOTAL: <span id="total"></span></p>
+                    </div>
+                </aside>
+            </main>
+        </div>
+
+        <div class="footer">
+            <p>&copy; 2024 SnapCart. All rights reserved.</p>
+        </div>
+        <script src="../js/Transaction.js"></script>
+    </body>
+</html>
