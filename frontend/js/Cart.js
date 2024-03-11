@@ -129,7 +129,8 @@ const updateDisplay = () => {
         }
     } else {
         itemTotal.style.display = "none";
-        empt.style.background = "linear-gradient(to right bottom, #93cfe6, #06334f 80%)";
+        empt.style.backgroundImage =
+            "linear-gradient(315deg, #131110 30%, #57749e 50%, #131110 80%)";
         empt.style.display = "flex";
         empt.style.flex = "1";
         empt.style.alignItems = "center";

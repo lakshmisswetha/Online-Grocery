@@ -9,14 +9,44 @@ a:visited {
     color: inherit;
 }
 
+/* body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* background: url(../assets/two.jpeg) no-repeat;
+    background-size: cover; 
+} */
+
+/*body::before {
+    background: url(../assets/two.jpeg) no-repeat;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
+} */
+
 body {
     height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative; /* Ensure the parent has a position value */
+    /* Remove the original background properties from body */
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: url(../assets/two.jpeg) no-repeat;
     background-size: cover;
+    filter: blur(8px);
+    z-index: -1;
 }
+
 .navbar {
     display: flex;
     justify-content: space-between;

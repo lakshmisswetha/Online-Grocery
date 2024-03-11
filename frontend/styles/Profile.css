@@ -70,11 +70,21 @@ li:hover,
     height: 100%;
     justify-content: center;
     align-items: center;
-    /* background-color: white; */
+    position: relative;
     padding: 35px 250px;
-    /* background: linear-gradient(to right bottom, #b8e5f7, #fba8a0, #06334f 80%); */
+}
+
+.body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     background: url(../assets/two.jpeg);
-    background-size: auto;
+    background-size: cover;
+    filter: blur(5px);
+    z-index: -1;
 }
 
 .footer {
@@ -87,14 +97,14 @@ li:hover,
 .left {
     /* box-shadow: 0 0 10px white; */
 
-    border-radius: 30px 0 0 30px;
+    border-radius: 20px 0 0 20px;
     text-align: left;
     width: 50%;
     height: 100%;
     display: flex;
     justify-content: space-between;
     flex-direction: column;
-    background: linear-gradient(to right bottom, #add8e6, #06334f 98%);
+    background: linear-gradient(to right bottom, #add8e6, #0d5989 98%);
     padding: 20px 40px;
     position: relative;
 }
@@ -115,8 +125,7 @@ li:hover,
     padding: 5px;
     outline: 0;
     border: 0;
-    box-shadow: 0 0 7px white;
-    border-radius: 5px;
+
     margin-bottom: 10px;
     background-color: #add8e6;
     font-size: medium;
@@ -124,8 +133,8 @@ li:hover,
 .right {
     width: 50%;
     height: 100%;
-    background: linear-gradient(to left bottom, #b8e5f7, #06334f 98%);
-    border-radius: 0 30px 30px 0;
+    background: linear-gradient(to left bottom, #add8e6, #0d5989 98%);
+    border-radius: 0 20px 20px 0;
     display: flex;
     flex-direction: column;
     padding: 30px 50px;
@@ -172,18 +181,17 @@ li:hover,
 .address input,
 .ip input {
     height: 30px;
-    box-shadow: 0 0 7px white;
-    border-radius: 5px;
+
+    border-radius: 2px;
     outline: none;
     background-color: #add8e6;
     font-size: medium;
 }
 .pwd input {
-    box-shadow: 0 0 7px white;
     border: 0;
     outline: 0;
     width: 170px;
-    border-radius: 5px;
+    border-radius: 2px;
     margin-bottom: 30px;
     background-color: #add8e6;
     padding: 5px;
